@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nyenyezi Institute Ltd | Putting Education First</title>
+  <meta name="description" content="Nyenyezi Institute Ltd, Matero, Lusaka, Zambia. Putting Education First since 1982. Find our school contact details and connect through Facebook, TikTok and WhatsApp.">
+  <meta name="theme-color" content="#278342">
+  <meta property="og:title" content="Nyenyezi Institute Ltd">
+  <meta property="og:description" content="Putting Education First — established 1982. Matero, Lusaka, Zambia.">
+  <meta property="og:type" content="website">
+  <style>
+    :root {
+      --green: #278342;
+      --green-dark: #155b2c;
+      --yellow: #f6c900;
+      --cream: #fffbea;
+      --ink: #173322;
+      --muted: #5d6d62;
+      --white: #fff;
+      --shadow: 0 18px 55px rgba(15, 57, 29, .12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; color: var(--ink); background: #f7faf6;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .topline { height: 7px; background: var(--yellow); }
+    header {
+      background: var(--green); color: var(--white);
+      border-bottom: 4px solid var(--yellow);
+    }
+    .nav {
+      max-width: 1120px; margin: auto; padding: 15px 22px;
+      display: flex; align-items: center; justify-content: space-between; gap: 18px;
+    }
+    .brand { display: flex; align-items: center; gap: 13px; text-decoration: none; }
+    .brand img {
+      width: 62px; height: 62px; object-fit: contain;
+      border: 0; border-radius: 0; background: transparent;
+    }
+    .brand strong { display: block; font-size: 1rem; letter-spacing: .02em; }
+    .brand span { display: block; color: #fff4b7; font-size: .76rem; }
+    nav { display: flex; gap: 20px; flex-wrap: wrap; }
+    nav a { text-decoration: none; font-weight: 650; font-size: .9rem; color: white; }
+    nav a:hover { color: var(--yellow); }
+    .hero {
+      background:
+        radial-gradient(circle at 85% 20%, rgba(246,201,0,.18), transparent 27%),
+        linear-gradient(135deg, var(--green-dark), var(--green));
+      color: white; overflow: hidden;
+    }
+    .hero-inner {
+      max-width: 1120px; margin: auto; padding: 74px 22px 78px;
+      display: grid; grid-template-columns: 1.25fr .75fr; align-items: center; gap: 44px;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 9px; color: #fff1a6;
+      text-transform: uppercase; letter-spacing: .15em; font-size: .73rem; font-weight: 800;
+    }
+    .eyebrow:before { content: ""; width: 27px; height: 3px; background: var(--yellow); }
+    h1 { margin: 15px 0 12px; font-size: clamp(2.4rem, 6vw, 4.8rem); line-height: 1.02; letter-spacing: -.045em; }
+    .hero p { max-width: 590px; color: #e9f5eb; font-size: 1.1rem; margin: 0 0 27px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; justify-content: center; align-items: center; gap: 9px;
+      padding: 13px 19px; border-radius: 999px; text-decoration: none; font-weight: 800;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,.16); }
+    .btn-yellow { background: var(--yellow); color: #193c22; }
+    .btn-outline { border: 1px solid rgba(255,255,255,.65); color: white; }
+    .crest-wrap {
+      justify-self: end; width: min(100%, 340px);
+      background: transparent; border: 0; border-radius: 0; box-shadow: none;
+    }
+    .crest-wrap img { display: block; width: 100%; height: auto; border: 0; border-radius: 0; }
+    .established {
+      display: inline-block; margin-top: 17px; padding: 7px 13px; border-radius: 999px;
+      background: rgba(246,201,0,.14); border: 1px solid rgba(246,201,0,.5);
+      color: #fff2a4; font-size: .84rem; font-weight: 700;
+    }
+    main { max-width: 1120px; margin: auto; padding: 62px 22px; }
+    .intro { display: grid; grid-template-columns: .8fr 1.2fr; gap: 42px; align-items: start; }
+    .section-kicker { color: var(--green); text-transform: uppercase; letter-spacing: .14em; font-size: .73rem; font-weight: 850; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.12; margin: 9px 0 14px; letter-spacing: -.035em; }
+    .intro p { color: var(--muted); margin-top: 0; }
+    .note {
+      background: var(--cream); border-left: 5px solid var(--yellow); padding: 22px 24px;
+      border-radius: 0 16px 16px 0; color: #405445;
+    }
+    .links-section { background: white; border-top: 1px solid #e7eee7; border-bottom: 1px solid #e7eee7; }
+    .links-inner { max-width: 1120px; margin: auto; padding: 58px 22px 66px; }
+    .section-head { max-width: 650px; margin-bottom: 27px; }
+    .section-head p { color: var(--muted); margin: 0; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; }
+    .card {
+      display: flex; flex-direction: column; min-height: 210px; padding: 24px;
+      border: 1px solid #e4ece4; border-radius: 20px; text-decoration: none;
+      background: #fff; box-shadow: 0 8px 28px rgba(20,70,35,.05);
+      transition: transform .18s ease, border-color .18s ease;
+    }
+    .card:hover { transform: translateY(-4px); border-color: var(--yellow); }
+    .icon {
+      width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center;
+      background: #edf6ee; color: var(--green); font-size: 1.35rem; font-weight: 900;
+    }
+    .card h3 { margin: 17px 0 5px; font-size: 1.15rem; }
+    .card p { color: var(--muted); font-size: .92rem; margin: 0 0 17px; }
+    .card span:last-child { color: var(--green); font-weight: 850; margin-top: auto; }
+    .contact {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center;
+      background: var(--green); color: white; padding: 34px; border-radius: 25px;
+    }
+    .contact p { color: #e3f0e5; }
+    .contact-details { display: grid; gap: 12px; }
+    .contact-row {
+      display: flex; align-items: center; gap: 12px; padding: 13px 15px;
+      background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.16);
+      border-radius: 13px; text-decoration: none; font-weight: 700;
+    }
+    .contact-row b { color: var(--yellow); min-width: 24px; }
+    footer { background: #123e23; color: #dceade; text-align: center; padding: 25px 18px; font-size: .88rem; }
+    footer strong { color: white; }
+    .small { font-size: .78rem; color: #bad2bf; margin-top: 5px; }
+    @media (max-width: 760px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      nav { gap: 13px; }
+      .hero-inner, .intro, .contact { grid-template-columns: 1fr; }
+      .hero-inner { padding-top: 52px; gap: 30px; }
+      .crest-wrap { justify-self: start; width: min(100%, 260px); }
+      .cards { grid-template-columns: 1fr; }
+      main { padding-top: 46px; padding-bottom: 46px; }
+      .contact { padding: 25px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#home" aria-label="Nyenyezi Institute home">
+        <img src="assets/nyenyezi-institute-logo.jpg" alt="Nyenyezi Institute Ltd school crest">
+        <span><strong>NYENYEZI INSTITUTE LTD</strong><span>PUTTING EDUCATION FIRST</span></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#connect">Connect</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">Matero · Lusaka · Zambia</span>
+        <h1>Putting<br>Education First.</h1>
+        <p>Welcome to Nyenyezi Institute Ltd. Connect with our school through our official social channels or contact us directly.</p>
+        <div class="hero-actions">
+          <a class="btn btn-yellow" href="https://wa.me/260973383246" target="_blank" rel="noopener">Message us on WhatsApp ↗</a>
+          <a class="btn btn-outline" href="#connect">Explore our links</a>
+        </div>
+        <span class="established">Proudly established in 1982</span>
+      </div>
+      <div class="crest-wrap">
+        <img src="assets/nyenyezi-institute-logo.jpg" alt="Nyenyezi Institute Ltd crest with open book and stars">
+      </div>
+    </div>
+  </section>
+
+  <main id="about">
+    <section class="intro">
+      <div>
+        <span class="section-kicker">Our school</span>
+        <h2>Welcome to Nyenyezi Institute Ltd</h2>
+      </div>
+      <div>
+        <p>Nyenyezi Institute Ltd is located in Matero, Lusaka, Zambia. Guided by the motto <strong>“Putting Education First”</strong>, the school’s crest reflects a commitment to learning and education.</p>
+        <div class="note"><strong>Established in 1982</strong><br>This page brings the school’s key online communication links together in one convenient place for parents, guardians and the wider community.</div>
+      </div>
+    </section>
+  </main>
+
+  <section class="links-section" id="connect">
+    <div class="links-inner">
+      <div class="section-head">
+        <span class="section-kicker">Stay connected</span>
+        <h2>Connect with our school</h2>
+        <p>Follow our social channels and contact the school directly. Save this page or share its address so others can find our links easily.</p>
+      </div>
+      <div class="cards">
+        <a class="card" href="https://web.facebook.com/share/r/1ERtLKXjdZ/" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">f</span>
+          <h3>Facebook</h3>
+          <p>Visit the Facebook link shared by the school.</p>
+          <span>Visit Facebook ↗</span>
+        </a>
+        <a class="card" href="https://vt.tiktok.com/ZSp3jg6cM/" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">♪</span>
+          <h3>TikTok</h3>
+          <p>Watch and follow the school on TikTok.</p>
+          <span>Visit TikTok ↗</span>
+        </a>
+        <a class="card" href="https://wa.me/260973383246" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">✆</span>
+          <h3>WhatsApp</h3>
+          <p>Start a WhatsApp conversation with the school contact.</p>
+          <span>Chat on WhatsApp ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main id="contact">
+    <section class="contact">
+      <div>
+        <span class="section-kicker" style="color:#ffeb83">Get in touch</span>
+        <h2>We’re here to help.</h2>
+        <p>For school enquiries, use the contact details below or send a message through WhatsApp.</p>
+      </div>
+      <div class="contact-details">
+        <a class="contact-row" href="tel:+260973383246"><b>☎</b> +260 973 383 246</a>
+        <a class="contact-row" href="https://wa.me/260973383246" target="_blank" rel="noopener"><b>✉</b> WhatsApp the school</a>
+        <div class="contact-row"><b>⌖</b> Matero, Lusaka, Zambia</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>NYENYEZI INSTITUTE LTD</strong><br>
+    Putting Education First · Established 1982
+    <div class="small">Matero, Lusaka, Zambia</div>
+  </footer>
+</body>
+</html>
